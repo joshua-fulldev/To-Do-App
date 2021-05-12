@@ -6,7 +6,7 @@ app.use(bodyParser());
 app.use(express.static(__dirname));
 app.set('view engine', 'ejs');
 
-var items = ["Buy Food", "Cook Food", "Eat Food"];
+var items = [];
 
 app.get("/", (req, res) => {
     var d = new Date();
